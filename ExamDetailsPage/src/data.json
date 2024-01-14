@@ -36,21 +36,12 @@
     "tags":["Engineering","PCM"]
   },
   {
-    "logo": "https://www.kindpng.com/picc/m/479-4793254_vit-university-logo-hd-png-download.png",
-    "title": "VITEEE 2023",
-    "agency": "Vellore Institute of Technology",
-    "numberOfPeople": "More than 10 lakhs",
-    "price": "1500",
-    "section":"recent",
-    "tags":["Engineering","PCM"]
-  },
-  {
-    "logo": "https://tse1.mm.bing.net/th?id=OIP.M5uyTUPhqtUwOTLx6Eb3-QHaHa&pid=Api&rs=1&c=1&qlt=95&w=113&h=113",
-    "title": "SRMJEE 2023",
-    "agency": "SRMIST",
-    "numberOfPeople": "More than 10 lakhs",
-    "price": "1000",
-    "section":"recent",
+    "logo": "https://tse4.mm.bing.net/th?id=OIP.7IFuHcYWl39sHPtQEP9AMwHaHa&pid=Api&P=0&h=180",
+    "title": "BEEE 2023",
+    "agency": "Bharat University",
+    "numberOfPeople": "More than 5 lakhs",
+    "price": "1600",
+    "section":"interested",
     "tags":["Engineering","PCM"]
   },
   {
@@ -59,17 +50,25 @@
     "agency": "TSCHE",
     "numberOfPeople": "More than 10 lakhs",
     "price": "1000",
-    "section":"recent",
+    "section":"interested",
     "tags":["Engineering","PCM"]
   },
   {
-    "logo": "https://tse4.mm.bing.net/th?id=OIP.7IFuHcYWl39sHPtQEP9AMwHaHa&pid=Api&P=0&h=180",
-    "title": "BEEE 2023",
-    "agency": "Bharat University",
-    "numberOfPeople": "More than 5 lakhs",
-    "price": "1600",
-    "section":"recent",
+    "logo": "https://tse1.mm.bing.net/th?id=OIP.M5uyTUPhqtUwOTLx6Eb3-QHaHa&pid=Api&rs=1&c=1&qlt=95&w=113&h=113",
+    "title": "SRMJEE 2023",
+    "agency": "SRMIST",
+    "numberOfPeople": "More than 10 lakhs",
+    "price": "1000",
+    "section":"interested",
+    "tags":["Engineering","PCM"]
+  },
+  {
+    "logo": "https://www.kindpng.com/picc/m/479-4793254_vit-university-logo-hd-png-download.png",
+    "title": "VITEEE 2023",
+    "agency": "Vellore Institute of Technology",
+    "numberOfPeople": "More than 10 lakhs",
+    "price": "1500",
+    "section":"interested",
     "tags":["Engineering","PCM"]
   }
-
 ]
