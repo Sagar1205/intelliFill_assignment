@@ -13,10 +13,13 @@ const MainCard = ({
   return (
     <div className="flex flex-col card border-grey-200 border-2 p-6 bg-white rounded-xl">
       <div className="flex justify-between pb-[0.20rem]">
-        <div className="flex gap-2">
-          <div className="border-2 rounded-lg">
-            <img src={logo} alt="Logo" className="w-10 h-10 rounded-full" />
+        <div className="md:flex gap-2">
+          <div className="flex">
+            <div className="border-2 rounded-lg">
+              <img src={logo} alt="Logo" className="w-10 h-10 rounded-full" />
+            </div>
           </div>
+
           <div className="flex flex-col">
             <h2 className="font-bold text-lg">{title}</h2>
             <p className="text-xs text-blue-500">{agency}</p>

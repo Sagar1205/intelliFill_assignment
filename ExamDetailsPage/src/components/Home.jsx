@@ -15,7 +15,7 @@ const Home = () => {
               <p>&#8592; Back</p>
             </div>
           </div>
-          <div className="flex gap-8">
+          <div className="sm:flex gap-8">
             <div className="flex flex-col gap-4">
               <div className="">
                 {MainCardData.map((item, index) => (
@@ -124,7 +124,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="w-2/3 bg-white p-4 rounded-xl h-min">
+            <div className="md:w-2/3 bg-white p-4 rounded-xl h-min">
               <div className="font-bold text-lg ">
                 Exams you might be interested in
               </div>

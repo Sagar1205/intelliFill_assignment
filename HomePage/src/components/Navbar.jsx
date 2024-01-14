@@ -7,16 +7,16 @@ const Navbar = () => {
       <div className="w-3/4 text-center">
         <nav>
           <div
-            className="flex items-center justify-between w-full md:flex md:w-auto md:order-1"
+            className="items-center justify-between w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
             <div>
               <Logo />
             </div>
-            <div className="flex gap-8">
+            <div className="md:flex gap-8">
               <a
                 href="#"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                className="block py-2 px-3 rounded md:bg-transparent text-blue-700 md:p-0 md:dark:text-blue-500"
                 aria-current="page"
               >
                 Home

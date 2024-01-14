@@ -4,7 +4,7 @@ import {Logo, Fb, Insta, Twitter, LinkedIn, Googlestore, Applestore } from "./Ic
 const Footer = () => {
   return (
     <div className="flex justify-center w-screen">
-      <div className="w-3/4 text-center flex justify-between py-8 px-0">
+      <div className="w-3/4 text-center sm:flex justify-between py-8 px-0">
         <div className="flex flex-col gap-16">
           <div>
             <Logo />

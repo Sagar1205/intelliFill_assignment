@@ -9,12 +9,15 @@ const InterestedCard = ({
   price,
 }) => {
   return (
-    <div className="flex border-grey-200 border-b-2 justify-between py-4 bg-white">
+    <div className="md:flex border-grey-200 border-b-2 justify-between py-4 bg-white">
       <div>
-        <div className="flex gap-2 justify-between pb-[0.20rem]">
-          <div className="border-2 rounded-lg">
-            <img src={logo} alt="Logo" className="w-10 h-10 rounded-full" />
+        <div className="md:flex gap-2 justify-between pb-[0.20rem]">
+          <div className="flex">
+            <div className="border-2 rounded-lg">
+              <img src={logo} alt="Logo" className="w-10 h-10 rounded-full" />
+            </div>
           </div>
+
           <div className="flex flex-col">
             <h2 className="font-bold text-lg">{title}</h2>
             <p className="text-sm text-gray-400">{agency}</p>

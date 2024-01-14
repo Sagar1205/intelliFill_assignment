@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <div className="flex justify-center w-full bg-gray-100">
         <div className="w-3/4 my-6">
-          <div className=''>
+          <div className="">
             <Banner />
           </div>
           <div className="py-2 flex flex-col gap-2">
@@ -20,7 +20,7 @@ const Home = () => {
                 See All
               </a>
             </div>
-            <div className="flex gap-4 overflow-hidden">
+            <div className="md:flex gap-4 overflow-hidden">
               {data.map(
                 (item, index) =>
                   item.section === "recommended" && (
@@ -47,16 +47,19 @@ const Home = () => {
               </a>
             </div>
             <div className="flex gap-4 overflow-hidden">
+              <div className="text-[1rem] hover:bg-blue-600 border-2 rounded-xl px-4 py-1 text-white bg-blue-400 cursor-pointer">
+                All
+              </div>
               {examNames.map((name, index) => (
                 <div
                   key={index}
-                  className="text-[1rem] border-blue-400 border-2 rounded-xl px-4 py-1 text-blue-400 cursor-pointer"
+                  className="text-[1rem] border-blue-400 border-2 rounded-xl px-4 py-1 hover:text-blue-600 hover:border-blue-600 text-blue-400 cursor-pointer"
                 >
                   <ExamList name={name} />
                 </div>
               ))}
             </div>
-            <div className="flex gap-4 overflow-hidden">
+            <div className="md:flex gap-4 overflow-hidden">
               {data.map(
                 (item, index) =>
                   item.section === "recent" && (
