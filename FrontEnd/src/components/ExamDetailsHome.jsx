@@ -1,11 +1,11 @@
 import React from "react";
 import data from "../data.json";
-import MainCardData from "../MainCardData.json"
+import MainCardData from "../MainCardData.json";
 import MainCard from "./MainCard";
 import InterestedCard from "./InterestedCard";
 import { NewFb, NewTwitter, NewLinkedIn } from "./Icons";
 
-const Home = () => {
+const ExamDetailsHome = () => {
   return (
     <>
       <div className="flex justify-center w-full bg-gray-100">
@@ -129,24 +129,26 @@ const Home = () => {
                 Exams you might be interested in
               </div>
               <div>
-                <div className=""> 
-                  {data.map((item, index) => (
-                    item.section === "interested" &&
-                    <div className="">
-                      <InterestedCard
-                        key={index}
-                        logo={item.logo}
-                        title={item.title}
-                        agency={item.agency}
-                        peoples={item.numberOfPeople}
-                        price={item.price}
-                      />
-                    </div>
-                  ))}
+                <div className="">
+                  {data.map(
+                    (item, index) =>
+                      item.section === "interested" && (
+                        <div className="">
+                          <InterestedCard
+                            key={index}
+                            logo={item.logo}
+                            title={item.title}
+                            agency={item.agency}
+                            peoples={item.numberOfPeople}
+                            price={item.price}
+                          />
+                        </div>
+                      )
+                  )}
                 </div>
               </div>
               <div className="flex justify-center py-5">
-                <button className="text-blue-500 rounded-3xl border-2 border-blue-500 bg-white">
+                <button className="text-blue-500 rounded-3xl border-2 px-2 border-blue-500 bg-white">
                   View all
                 </button>
               </div>
@@ -158,4 +160,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ExamDetailsHome;
