@@ -3,7 +3,7 @@ import { Wallet, Users, Bookmark, Lessthan } from "./Icons";
 
 const Card = ({ logo, title, numberOfPeople, agency, price, tags }) => {
   return (
-    <div className="card border-grey-200 border-2 p-2 bg-white" style={{width:"350px"}}>
+    <div className="card border-grey-200 rounded-xl border-2 p-2 bg-white" style={{width:"350px"}}>
       <div className="flex justify-between border-b-2 pb-[0.20rem]">
         <div className="flex gap-2">
           <div className="border-2 rounded-lg">
@@ -19,20 +19,16 @@ const Card = ({ logo, title, numberOfPeople, agency, price, tags }) => {
         </div>
       </div>
 
-      {/* <div className="flex justify-center">
-        <hr className="w-5/6" />
-      </div> */}
-
       <div className="flex p-2">
         <div className="w-10"></div>
         <div className="flex flex-col gap-[0.2rem]">
           <p className="flex gap-2">
             <Users />
-            <p className="text-lg">{numberOfPeople}</p>
+            <p className="text-sm">{numberOfPeople}</p>
           </p>
           <p className="flex gap-2">
             <Wallet />
-            <p className="text-lg">₹ {price}</p>
+            <p className="text-sm">₹ {price}</p>
           </p>
           <div className="flex gap-3">
             {tags.map((tag, index) => (

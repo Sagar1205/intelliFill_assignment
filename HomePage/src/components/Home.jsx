@@ -20,7 +20,30 @@ const Home = () => {
                 See All
               </a>
             </div>
-            <div className="md:flex gap-4 overflow-hidden">
+            <div className="md:flex gap-4 overflow-scroll overflow-y-hidden ">
+              <style>
+                {`
+          /* Hide the scrollbar for webkit browsers (Chrome, Safari) */
+          .overflow-scroll::-webkit-scrollbar {
+            width: 0.5em;
+          }
+
+          .overflow-scroll::-webkit-scrollbar-thumb {
+            background-color: transparent;
+          }
+
+          /* Hide the scrollbar for Firefox */
+          .overflow-scroll {
+            scrollbar-width: thin;
+            scrollbar-color: transparent transparent;
+          }
+
+          /* Hide the scrollbar for IE and Edge */
+          .overflow-scroll {
+            -ms-overflow-style: none;
+          }
+        `}
+              </style>
               {data.map(
                 (item, index) =>
                   item.section === "recommended" && (
@@ -46,8 +69,31 @@ const Home = () => {
                 See All
               </a>
             </div>
-            <div className="flex gap-4 overflow-hidden">
-              <div className="text-[1rem] hover:bg-blue-600 border-2 rounded-xl px-4 py-1 text-white bg-blue-400 cursor-pointer">
+            <div className="flex gap-4 overflow-hidden items-center">
+              <style>
+                {`
+          /* Hide the scrollbar for webkit browsers (Chrome, Safari) */
+          .overflow-scroll::-webkit-scrollbar {
+            width: 0.5em;
+          }
+
+          .overflow-scroll::-webkit-scrollbar-thumb {
+            background-color: transparent;
+          }
+
+          /* Hide the scrollbar for Firefox */
+          .overflow-scroll {
+            scrollbar-width: thin;
+            scrollbar-color: transparent transparent;
+          }
+
+          /* Hide the scrollbar for IE and Edge */
+          .overflow-scroll {
+            -ms-overflow-style: none;
+          }
+        `}
+              </style>
+              <div className="text-[1rem] hover:bg-blue-600 border-2 rounded-xl px-1 py-1 text-white bg-blue-400 cursor-pointer">
                 All
               </div>
               {examNames.map((name, index) => (
@@ -59,7 +105,30 @@ const Home = () => {
                 </div>
               ))}
             </div>
-            <div className="md:flex gap-4 overflow-hidden">
+            <div className="md:flex gap-4 overflow-scroll overflow-y-hidden">
+              <style>
+                {`
+          /* Hide the scrollbar for webkit browsers (Chrome, Safari) */
+          .overflow-scroll::-webkit-scrollbar {
+            width: 0.5em;
+          }
+
+          .overflow-scroll::-webkit-scrollbar-thumb {
+            background-color: transparent;
+          }
+
+          /* Hide the scrollbar for Firefox */
+          .overflow-scroll {
+            scrollbar-width: thin;
+            scrollbar-color: transparent transparent;
+          }
+
+          /* Hide the scrollbar for IE and Edge */
+          .overflow-scroll {
+            -ms-overflow-style: none;
+          }
+        `}
+              </style>
               {data.map(
                 (item, index) =>
                   item.section === "recent" && (
