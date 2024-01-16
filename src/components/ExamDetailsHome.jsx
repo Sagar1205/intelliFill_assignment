@@ -4,6 +4,7 @@ import MainCardData from "../mainCardData.json";
 import MainCard from "./MainCard";
 import InterestedCard from "./InterestedCard";
 import { NewFb, NewTwitter, NewLinkedIn } from "./Icons";
+import { Link } from "react-router-dom";
 
 const ExamDetailsHome = () => {
   return (
@@ -12,7 +13,9 @@ const ExamDetailsHome = () => {
         <div className="w-3/4 my-6 flex flex-col gap-2">
           <div className="font-bold">
             <div>
-              <p>&#8592; Back</p>
+              <Link to="/">
+                <p>&#8592; Back</p>
+              </Link>
             </div>
           </div>
           <div className="sm:flex gap-8">

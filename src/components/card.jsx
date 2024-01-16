@@ -1,9 +1,13 @@
 import React from "react";
 import { Wallet, Users, Bookmark, Lessthan } from "./Icons";
+import { Link } from "react-router-dom";
 
 const Card = ({ logo, title, numberOfPeople, agency, price, tags }) => {
   return (
-    <div className="card border-grey-200 rounded-xl border-2 p-2 bg-white" style={{width:"350px"}}>
+    <div
+      className="card border-grey-200 rounded-xl border-2 p-2 bg-white"
+      style={{ width: "350px" }}
+    >
       <div className="flex justify-between border-b-2 pb-[0.20rem]">
         <div className="flex gap-2">
           <div className="border-2 rounded-lg">
@@ -41,9 +45,9 @@ const Card = ({ logo, title, numberOfPeople, agency, price, tags }) => {
             ))}
           </div>
           <div className="flex text-sm">
-            <a href="" className="text-blue-400">
+            <Link to="/e" className="text-blue-400">
               View Details &gt;
-            </a>
+            </Link>
             {/* <Lessthan /> */}
           </div>
         </div>
