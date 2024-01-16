@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../data.json";
-import MainCardData from "../MainCardData.json";
+import MainCardData from "../mainCardData.json";
 import MainCard from "./MainCard";
 import InterestedCard from "./InterestedCard";
 import { NewFb, NewTwitter, NewLinkedIn } from "./Icons";
