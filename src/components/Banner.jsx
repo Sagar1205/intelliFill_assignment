@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="">
       <img
-        src="./src/assets/banner.png"
+        src="/banner.png"
         alt=""
         className="rounded-lg w-full h-32 object-cover"
       />
