@@ -8,8 +8,8 @@ This project is a React application built with Vite and styled using Tailwind CS
 
 ## Features
 
-1. HomePage on the route '/'
-2. ExamDetailsPage on the route '/examDetails'
+1. Clicking on 'view details >' of any card of 'HomePage' will connect to 'ExamDetailsPage'.
+2. Clicking on '<- Back' on the 'ExamDetailsPage' will connect to 'HomePage'.
 
 ## Technologies Used
 
