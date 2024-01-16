@@ -1,13 +1,8 @@
 import React from "react";
 import { Users, Wallet } from "./Icons";
+import { Link } from "react-router-dom";
 
-const InterestedCard = ({
-  logo,
-  title,
-  agency,
-  peoples,
-  price,
-}) => {
+const InterestedCard = ({ logo, title, agency, peoples, price }) => {
   return (
     <div className="md:flex border-grey-200 border-b-2 justify-between py-4 bg-white">
       <div>
@@ -35,7 +30,7 @@ const InterestedCard = ({
         </div>
       </div>
       <div className="text-blue-500 flex flex-col justify-end items-left">
-        View details &gt;
+        <Link to="/">View details &gt;</Link>
       </div>
     </div>
   );
